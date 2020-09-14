@@ -172,6 +172,7 @@ public:
     virtual void on_stream_publish(SrsRequest* req, int cid);
     // When close stream.
     virtual void on_stream_close(SrsRequest* req);
+    virtual void stream_close(SrsStatisticStream* stream);
 public:
     // When got a client to publish/play stream,
     // @param id, the client srs id.
